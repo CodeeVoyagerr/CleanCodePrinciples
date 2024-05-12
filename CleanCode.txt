@@ -1,0 +1,85 @@
+CLEAN CODE
+TEMİZ KOD YAZMA SANATI
+*********************************
+Clean Code = Okunabilir Kod
+
+"Clean Code," yazılım geliştirme alanında popüler bir kavramdır ve temiz, anlaşılır, bakımı kolay ve hatasız yazılım oluşturmayı hedefler. 
+Bu kavram, yazılım geliştiricilerinin kodlarını daha etkili, okunabilir ve sürdürülebilir hale getirmek için belirli prensiplere ve uygulamalara odaklanır.
+
+Clean Code'ın bazı temel prensipleri şunlar olabilir:
+
+Anlamlı İsimlendirme: Değişkenlerin, fonksiyonların, sınıfların ve diğer kod öğelerinin anlamlı, açıklayıcı ve anlaşılır isimlendirilmesi. 
+İsimlendirmelerde kısaltmalardan uzak dur. (Açık Açık Yaz) 
+Türkçe isimlendirme yapma.Programlama dillerinin dili İngilizce olduğu için İngilizce isimlendirme yapılmalıdır.
+
+Fonksiyon Boyutu: Her fonksiyonun küçük, sade ve tek bir işlevi olmalıdır (ideal olarak birkaç satırdan oluşmalıdır).
+Yani her fonksiyon tek bir işlevi yerine getirmeli ve mümkünse kısa olmalıdır.
+
+Tek Sorumluluk İlkesi (Single Responsibility Principle - SRP): Bir sınıfın ve bir fonksiyonun sadece bir sorumluluğu olmalıdır. Sınıfların ve fonksiyonların görevleri net ve sınırlı olmalıdır.
+
+Sık Sık Refaktör Yapma: Kodun sürekli olarak iyileştirilmesi ve temizlenmesi, geliştiricinin bilgi düzeyini artırabilir ve bakım maliyetini azaltabilir.
+
+Doğru Yorumlar: Gerektiğinde açıklamalar eklenmeli, ancak kodun kendisi zaten anlamlı ve açık olmalıdır. Kodun karmaşıklığını anlatan yorumlar tercih edilmelidir.
+Kodunuzun anlaşılır olması önemlidir ancak gereksiz yorumlardan kaçınmalısınız. Fonksiyonun içine yorum yazılmaz, gerekiyorsa üstüne yazılabilir fakat fonksiyon içine yorum yazmamaya dikkat edilmelidir.
+
+Test Edilebilirlik: Kod, test edilmesi kolay olacak şekilde tasarlanmalıdır. Unit testleri yazmak ve kodu test etmek Clean Code prensiplerinin bir parçasıdır.
+Kodunuzun test edilebilir olmasına dikkat edin ve unit testleri yazın.
+
+Kod Tekrarının Önlenmesi: Gereksiz tekrarlamalardan kaçınılmalıdır. DRY prensibi (Don't Repeat Yourself) uygulanmalıdır.
+
+Yüksek Seviyeli Dil Kullanma: Kodunuzun anlaşılabilir olması için yüksek seviyeli bir dil kullanmaya özen gösterin.
+
+Temiz Kodun Önemi: Temiz kod yazmanın önemini anlayın ve bu prensipleri uygulamak için çaba sarf edin.
+
+Bağımlılıkları Yönetme: Bağımlılıkları en aza indirin ve modüler bir yapı oluşturun.
+
+Kodunuzun Kolay Okunabilir Olmasına Özen Gösterin: İncelemesi ve anlaşılması kolay bir kod yazmaya çalışın.
+
+Düşük Karmaşıklık: Karmaşık kodlardan kaçının ve basit, anlaşılır yapıları tercih edin.
+
+Standart Stilleri Kullanma: Belirli bir dil veya teknoloji için standart kodlama stillerini takip edin.
+
+Gereksiz Detaylardan Kaçının: Gereksiz ayrıntıları kodunuzdan çıkarın ve odaklanmanız gereken temel konulara odaklanın.
+
+Proaktif Değişikliklere Hazırlık: Kodunuzun gelecekteki değişikliklere hazır olmasını sağlayın.
+
+Dilin Paradigmasını Anlama: Kullandığınız dilin paradigmasını anlayın ve uygun tasarım prensiplerini kullanın.
+
+Performansı Unutmayın: Temiz kod yazarken performansı da göz önünde bulundurun, ancak önce okunabilirliği ve sürdürülebilirliği düşünün.
+
+Clean Code, Robert C. Martin'in "Clean Code: A Handbook of Agile Software Craftsmanship" adlı kitabında detaylı bir şekilde ele alınmıştır. 
+Bu kitap, yazılım geliştiricilerine temiz ve etkili kod yazma konusunda rehberlik eden önemli bir kaynaktır.
+
+
+Code Refactoring Nedir ?
+
+Code refactoring, mevcut bir yazılım sisteminin kodunu değiştirmeden, onu daha anlaşılır, sürdürülebilir ve genellikle daha etkili hale getirme sürecidir. 
+Bu, kodun yapısını, içeriğini ve organizasyonunu düzenleyerek, genellikle kodun performansını artırırken, hataları azaltmayı ve gelecekteki değişikliklere daha iyi uyum sağlamayı amaçlar. 
+Refactoring, kodun davranışını değiştirmemek şartıyla gerçekleştirilir.
+
+Refactoring'in temel amacı, kodun okunabilirliğini artırmak, karmaşıklığı azaltmak, tekrarı önlemek, kötü tasarımları düzeltmek ve daha iyi bir kod kalitesi elde etmektir. 
+Ayrıca, refactoring süreci yazılım geliştiricilerin daha hızlı ve daha güvenli bir şekilde çalışmalarına olanak tanıyabilir.
+
+Bazı yaygın refactoring teknikleri şunlardır:
+
+Fonksiyon ve Sınıf Bölme (Extract Method/Class): Uzun bir fonksiyonu veya sınıfı daha küçük, daha anlamlı parçalara bölmek.
+
+Değişken Adlarını Değiştirme (Rename Variable): Anlamsız veya yanıltıcı değişken adlarını daha açıklayıcı hale getirmek.
+
+Kod Tekrarını Önleme (Remove Code Duplication): Benzer kod bloklarını birleştirme ve tekrarı önleme.
+
+Gereksiz Kodu Kaldırma (Remove Dead Code): Kullanılmayan veya erişilemeyen kodları temizleme.
+
+Fonksiyonların Birleştirilmesi (Combine Functions): Benzer işlevlere sahip iki ayrı fonksiyonu birleştirme.
+
+Kod Yapısını Değiştirme (Reorganize Code Structure): Sınıfları, fonksiyonları veya modülleri daha iyi organize etme.
+
+Loops ve Koşullu İfadeleri Basitleştirme (Simplify Loops and Conditionals): Karmaşık döngüleri veya koşullu ifadeleri daha basitleştirme.
+
+Büyük Sınıfları Parçalama (Split Large Classes): Büyük ve karmaşık sınıfları daha küçük ve yönetilebilir parçalara bölmek.
+
+Algoritmayı Geliştirme (Improve Algorithm): Verimlilik ve performans açısından daha iyi bir algoritma kullanma.
+
+Refactoring, yazılım geliştirme sürecinin bir parçası olarak düşünülmelidir ve sürekli olarak uygulanmalıdır. 
+Bu sayede kod, proje boyunca evrimleşebilir ve değişen gereksinimlere daha iyi adapte olabilir. Refactoring, Clean Code prensiplerine uyum sağlayarak yazılım kalitesini artırmaya yardımcı olur.
+
